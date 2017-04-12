@@ -68,7 +68,7 @@ export default class ExampleModule extends React.Component {
 				<h3>Visa på karta:</h3>
 				<p>{markerLinks}</p>
 
-				<SimpleMap marker={this.state.marker} />
+				<SimpleMap animate="true" marker={this.state.marker} />
 			</div>
 		);
 	}

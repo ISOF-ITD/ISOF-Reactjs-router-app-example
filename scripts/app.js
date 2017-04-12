@@ -13,7 +13,7 @@ ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={Application}>
 
-			<Route path="/map(/label/:label)(/lat/:lat)(/lng/:lng)" 
+			<Route path="/map(/namn/:label)(/label/:label)(/lat/:lat)(/lng/:lng)" 
 				components={{main: ExampleModule}}/>
 			<Route path="/form" 
 				components={{main: ExampleFormModule}}/>
