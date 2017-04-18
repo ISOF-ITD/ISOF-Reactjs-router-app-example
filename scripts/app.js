@@ -7,6 +7,14 @@ import { Router, Route, Link, hashHistory, Redirect } from 'react-router'
 import Application from './components/Application';
 import ExampleModule from './components/ExampleModule';
 import ExampleFormModule from './components/ExampleFormModule';
+import ExampleFetchModule from './components/ExampleFetchModule';
+
+// IE 11 backwards compatibility, om dem moderna funktionerna Promise och Fetch inte finns i äldre webbläsare, då skapar vi dom
+import 'whatwg-fetch';
+import Promise from 'promise-polyfill'; 
+if (!window.Promise) {
+	window.Promise = Promise;
+}
 
 // ReactDOM.render är startpunkten i varje React application. Här definerar vi vårt <Router> object som strukturerar "sidorna" i applicationen
 ReactDOM.render(
@@ -17,6 +25,8 @@ ReactDOM.render(
 				components={{main: ExampleModule}}/>
 			<Route path="/form" 
 				components={{main: ExampleFormModule}}/>
+			<Route path="/fetch(/category/:category)" 
+				components={{main: ExampleFetchModule}}/>
 
 		</Route>
 	</Router>,

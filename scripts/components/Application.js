@@ -20,7 +20,7 @@ export default class Application extends React.Component {
 		} = this.props;
 		return (
 			<div className="app">
-				<p><a href="#/">Första sidan</a> | <a href="#/map">Visa example module med en karta</a> | <a href="#/form">Visa example module med formulär</a></p>
+				<p><a href="#/">Första sidan</a> | <a href="#/map">Visa example module med en karta</a> | <a href="#/form">Visa example module med formulär</a> | <a href="#/fetch">Visa example module med fetch</a></p>
 				<div>
 					<h3>Main module area</h3>
 					<p>Här under kommer moduler att dyka upp</p>
