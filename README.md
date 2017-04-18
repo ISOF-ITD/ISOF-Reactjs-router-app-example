@@ -11,3 +11,7 @@ Node.js och NPM package manager måste vara installerad.
 3. Kör Gulp via `gulp`.
 
 Om Gulp kommer med fel i början kan det vara för att inte alla moduler har installeras. Då måste dom installeras manuallt via `npm install [module namn]`.
+
+## Demo
+
+Demo av denna repository (https://isof-itd.github.io/Reactjs-Example/www/index.html#/)[finns här].
