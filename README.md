@@ -14,4 +14,4 @@ Om Gulp kommer med fel i början kan det vara för att inte alla moduler har ins
 
 ## Demo
 
-Demo av denna repository [finns här]([https://isof-itd.github.io/Reactjs-Example/www/index.html).
+Demo av denna repository [finns här](https://isof-itd.github.io/Reactjs-Example/www/index.html).
