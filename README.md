@@ -1,6 +1,6 @@
 # React.js Example
 
-Exemple projekt som använder React.js. Nytt repository av detta projekt kan skapas via Fork i GitHub.
+Exemple projekt som använder React.js och vissa komponenter, till exempel [react-router]() och [EventBus](https://github.com/krasimir/EventBus). Nytt repository av detta projekt kan skapas via Fohttps://github.com/ReactTraining/react-routerrk i GitHub.
 
 ## Installation
 
