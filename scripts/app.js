@@ -9,6 +9,7 @@ import ExampleModule from './components/ExampleModule';
 import ExampleFormModule from './components/ExampleFormModule';
 import ExampleFetchModule from './components/ExampleFetchModule';
 import ComponentsExample from './components/ComponentsExample';
+import EventBusExample from './components/EventBusExample';
 
 // IE 11 backwards compatibility, om dem moderna funktionerna Promise och Fetch inte finns i äldre webbläsare, då skapar vi dom
 import 'whatwg-fetch';
@@ -30,6 +31,8 @@ ReactDOM.render(
 				components={{main: ExampleFetchModule}}/>
 			<Route path="/components" 
 				components={{main: ComponentsExample}}/>
+			<Route path="/eventbus" 
+				components={{main: EventBusExample}}/>
 
 		</Route>
 	</Router>,

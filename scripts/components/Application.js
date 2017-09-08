@@ -7,6 +7,7 @@ export default class Application extends React.Component {
 	constructor(props) {
 		super(props);
 
+		// Lägg till globalt eventBus variable för att skicka data mellan moduler
 		window.eventBus = EventBus;
 	}
 
@@ -29,13 +30,13 @@ export default class Application extends React.Component {
 
 					<hr/>
 
-					<p><a href="#/">Första sidan</a> | <a href="#/components">Component exempel</a> | <a href="#/map">Visa example module med en karta</a> | <a href="#/form">Visa example module med formulär</a> | <a href="#/fetch">Visa example module med fetch</a></p>
+					<p><a href="#/">Första sidan</a> | <a href="#/components">Component exempel</a> | <a href="#/map">Visa example module med en karta</a> | <a href="#/form">Visa example module med formulär</a> | <a href="#/fetch">Visa example module med fetch</a> | <a href="#/eventbus">Visa example som använder EventBus</a></p>
 					<div>
 						<h3>Main module area</h3>
 						<p>Här under kommer moduler att dyka upp.</p>
 
-						<div style={{background: '#fff', padding: 20, border: '1px dashed #999'}}>
-							{main || <div>Ingen modul visas för route "{this.props.route.path}".</div>}
+						<div style={{background: '#fff', padding: '5px 20px 20px 20px', border: '1px dashed #999'}}>
+							{main || <p>Ingen modul registrerat för route "{this.props.route.path}".</p>}
 						</div>
 
 					</div>

@@ -3,8 +3,6 @@ import { hashHistory } from 'react-router';
 
 import SimpleMap from './../../ISOF-React-modules/components/views/SimpleMap';
 
-import EventBus from 'eventbusjs';
-
 const markers = [
 	{
 		label: 'Göteborg',
@@ -26,8 +24,6 @@ const markers = [
 export default class ExampleModule extends React.Component {
 	constructor(props) {
 		super(props);
-
-		window.eventBus = EventBus;
 
 		this.state = {
 			marker: null

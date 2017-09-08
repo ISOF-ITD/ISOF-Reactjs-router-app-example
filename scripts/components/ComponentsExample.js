@@ -14,7 +14,7 @@ export default class ComponentsExample extends React.Component {
 				<h2>DropdownMenu</h2>
 
 				<DropdownMenu label="Öppna" containerType="text">
-					<p>DropdownMenu innehåll</p>
+					<div>DropdownMenu innehåll</div>
 				</DropdownMenu>
 
 			</div>

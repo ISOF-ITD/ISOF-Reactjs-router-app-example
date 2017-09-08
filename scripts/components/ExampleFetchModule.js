@@ -1,13 +1,9 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
 
-import EventBus from 'eventbusjs';
-
 export default class ExampleFetchModule extends React.Component {
 	constructor(props) {
 		super(props);
-
-		window.eventBus = EventBus;
 
 		this.state = {
 			data: []
@@ -54,7 +50,7 @@ export default class ExampleFetchModule extends React.Component {
 
 				<p>Modul som hämtar data från server</p>
 
-				<p>Kategori som bokstav can läggas till som parameter i url (#/fetch/<b>category/a</b>). Exempel: <a href="#/fetch/category/a">Döden och de döda (a)</a> och <a href="#/fetch/category/d">Vattenväsen (d)</a>.</p>
+				<p>Kategori som bokstav can läggas till som parameter i url (#/fetch/<b>category/[bokstav]</b>). Exempel: <a href="#/fetch/category/a">Döden och de döda (a)</a> och <a href="#/fetch/category/d">Vattenväsen (d)</a>.</p>
 
 				<h3>Sägner</h3>
 
