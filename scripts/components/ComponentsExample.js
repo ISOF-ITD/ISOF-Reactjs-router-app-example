@@ -1,7 +1,7 @@
 import React from 'react';
 import { hashHistory } from 'react-router';
 
-import DropdownMenu from './../../ISOF-React-modules/components/views/DropdownMenu';
+import DropdownMenu from './../../ISOF-React-modules/components/controls/DropdownMenu';
 
 export default class ComponentsExample extends React.Component {
 	constructor(props) {
@@ -13,14 +13,7 @@ export default class ComponentsExample extends React.Component {
 			<div>
 				<h2>DropdownMenu</h2>
 
-				<hr/>
-
-				<h3>Component exemple</h3>
-
-				<pre>import DropdownMenu from './../../ISOF-React-modules/components/views/DropdownMenu';</pre>
-				<pre>@import "../ISOF-React-modules/less/ui-components/dropdownmenu.less";</pre>
-
-				<DropdownMenu label="Öppna">
+				<DropdownMenu label="Öppna" containerType="text">
 					<p>DropdownMenu innehåll</p>
 				</DropdownMenu>
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { hashHistory } from 'react-router';
 
 import SimpleMap from './../../ISOF-React-modules/components/views/SimpleMap';
-import AutocompleteInput from './../../ISOF-React-modules/components/views/AutocompleteInput';
+import AutocompleteInput from './../../ISOF-React-modules/components/controls/AutocompleteInput';
 
 import EventBus from 'eventbusjs';
 
@@ -46,9 +46,9 @@ export default class ExampleFormModule extends React.Component {
 			<div>
 				<h2>ExampleFormModule</h2>
 
-				<label>Input 1: <input type="text" value={this.state.textInput1Value} onChange={this.textInput1ValueChangeHandler} /></label>
+				<label>Input 1: <br/><input type="text" value={this.state.textInput1Value} onChange={this.textInput1ValueChangeHandler} /></label>
 
-				<label>Input 2: <AutocompleteInput minChars="4" valueField="name" searchUrl="http://www4.sprakochfolkminnen.se/sagner/api/locations/search/$s/search_field/place" value={this.state.textInput2Value} onChange={this.textInput2ValueChangeHandler} /></label>
+				<label>Input 2: <br/><AutocompleteInput minChars="4" valueField="name" searchUrl="http://www4.sprakochfolkminnen.se/sagner/api/locations/search/$s/search_field/place" value={this.state.textInput2Value} onChange={this.textInput2ValueChangeHandler} /></label>
 
 				<p>
 					<strong>Input 1 value:</strong> {this.state.textInput1Value}<br/><br/>
