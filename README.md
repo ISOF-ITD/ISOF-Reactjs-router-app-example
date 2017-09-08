@@ -1,6 +1,6 @@
 # React.js Example
 
-Exemmple projekt som använder React.js. Nytt repository av detta projekt kan skapas via Fork i GitHub.
+Exemple projekt som använder React.js. Nytt repository av detta projekt kan skapas via Fork i GitHub.
 
 ## Installation
 
